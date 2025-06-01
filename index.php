@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: "Courier New", serif;
+            font-size: 26px;
         }
 
         table {
@@ -49,7 +50,7 @@
 
     // speed check
 
-    const urlSpeedCheck = 'http://www.flaute.de/connection-check/speedcheck.php';
+    const urlSpeedCheck = 'speedcheck.php';
     const start = performance.now();
 
     axios.get(urlSpeedCheck)
@@ -67,7 +68,7 @@
 
     // ip/isp check
 
-    const urlIpCheck = 'http://www.flaute.de/connection-check/ipcheck.php';
+    const urlIpCheck = 'ipcheck.php';
 
     axios.get(urlIpCheck)
         .then(response => {
