@@ -58,8 +58,8 @@
 
             const end = performance.now();
 
-            document.getElementById('transportSpeed').textContent = (end - start - response.data.transactionDuration).toFixed(2) + " ms";
-            document.getElementById('serverSpeed').textContent = response.data.transactionDuration.toFixed(2) + " ms";
+            document.getElementById('transportSpeed').textContent = (end - start - response.data.transactionDuration).toFixed(0) + " ms";
+            document.getElementById('serverSpeed').textContent = response.data.transactionDuration.toFixed(0) + " ms";
             document.getElementById('statusSpeedCheck').textContent = 'Success';
         })
         .catch(error => {
